@@ -67,7 +67,11 @@ section {
 	position: absolute;
 	right: 10px;
 	top: 10px;
-	color: white;
+}
+
+.menu-items,
+.menu-items a {
+	color: #fff;
 }
 
 .menu-items li {
@@ -83,9 +87,13 @@ section {
 	color: #333;
 }
 
+.menu-items a {
+	text-decoration: none;
+}
+
 .landing {
 	position: relative;
-	background-image: url("images/irish-hands-2560px.jpg");
+	background-image: url("images/irish-hands.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	height: 100%;	
@@ -159,6 +167,10 @@ section {
 	margin-left: 25px;
 }
 
+#mobile-hr {
+	display: none;
+}
+
 section.image-gap {
 	height: 300px;
 	background-position: 50% 50%;
@@ -180,11 +192,11 @@ section.image-gap h1 {
 }
 
 section.image-gap.image-1 {
-	background-image: url("images/macbook-air-all-faded-and-stuff.jpg");
+	background-image: url("images/apple-gear-looking-pretty.jpg");
 }
 
 section.image-gap.image-2 {
-	background-image: url("images/simplicity.jpg");
+	background-image: url("images/clock.jpg");
 }
 
 .container {
@@ -211,6 +223,19 @@ footer {
 	
 	.content {
 		width: 85%;
+	}
+	
+	.intro-content-row-two img,
+	.intro-content-row-three img {
+		padding-top: 10px;
+	}
+	
+	#none-mobile-hr {
+		display: none;
+	}
+	
+	#mobile-hr {
+		display: inline;
 	}
 }
 
