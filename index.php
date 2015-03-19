@@ -93,7 +93,7 @@
 		</section>
 		
 		<section class="testimonials">
-			<h2>TVÖ SÍÐUSTU VERKEFNI</h2>
+			<h2>SÍÐUSTU VERKEFNI</h2>
 			<div class="testimonials-left">
 				<center><img src="images/ll-netverslun.png" alt="Mynd af tilbúinni vefsíðu" width="250px"></center>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis a nibh id gravida. Vestibulum sed sodales enim, eget pretium tortor. Fusce accumsan accumsan dignissim. Vivamus sollicitudin tristique felis, sit amet iaculis dui vulputate a. Curabitur placerat neque sed mi venenatis tincidunt. Vestibulum eget tempor nulla, ut vehicula velit. Quisque lobortis tortor interdum lectus suscipit, id pharetra augue facilisis.</p>
