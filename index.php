@@ -4,9 +4,10 @@
 	<head><meta charset="UTF-8" />
 		<title>740.is - Vefsíður</title>
 		<link rel="stylesheet" type="text/css" href="normalize.css">
-		<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,300,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://basehold.it/30/ff00ff">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300,500,300italic,500italic' rel='stylesheet' type='text/css'>
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
