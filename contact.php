@@ -1,2 +1,2 @@
-<h1>Fylltur út í reitina</h1>
-<h4>og við höfum samband</h4>
+<h1>Sendu mér línu!</h1>
+<h4><a href="mailto:info@740.is" class="mailto">info[hjá]740.is</a> og ég hef samband</h4>

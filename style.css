@@ -40,6 +40,11 @@ nav {
 	z-index: 1;
 }
 
+.mailto {
+	text-decoration: none;
+	color: #fff;
+}
+
 button {
 	background-color: transparent;
 	color: #fff;
@@ -174,7 +179,7 @@ button:hover {
 }
 
 .three-column {
-	width: 900px;
+	width: 1000px;
 	margin: auto;
 }
 
@@ -220,7 +225,7 @@ button:hover {
 .intro-content-row-two,
 .intro-content-row-three {
 	position: relative;
-	width: 31%;
+	width: 310px;
 	height: 100%;
 	display: inline-table;
 	text-align: left;
@@ -304,7 +309,7 @@ footer {
 	text-align: center;
 }
 
-@media screen and (max-width: 957px) {
+@media screen and (max-width: 1040px) {
 	.content {
 		width: 100%;
 		margin: auto;
