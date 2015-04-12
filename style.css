@@ -45,14 +45,36 @@ nav {
 	color: #fff;
 }
 
-button {
+.button-white,
+.button-gray {
 	background-color: transparent;
+	border-radius: 3px;
+	padding: 7px 10px 5px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 1.1px;
+
+}
+
+.button-white {
 	color: #fff;
 	border: 2px solid #FFFFFF;
-	border-radius: 3px;
-	padding: 8px;
-	text-transform: uppercase;
-	letter-spacing: 1.1px;
+}
+
+.button-white:hover {
+	background: #fff;
+	color: #333;
+}
+
+.button-gray {
+	color: #333;
+	border: 2px solid #333333;
+	
+}
+
+.button-gray:hover {
+	background: #333;
+	color: #fff;
 }
 
 section {
@@ -71,6 +93,10 @@ section {
 	height: 100%;
 }
 
+.mobile {
+	display: none;
+}
+
 .menu-items {
 	position: fixed;
 	width: 100%;
@@ -83,7 +109,7 @@ section {
 .menu-items,
 .menu-items a {
 	color: #fff;
-	padding-top: 10px;
+	padding-top: 7px;
 }
 
 .menu-items a {
@@ -97,15 +123,9 @@ section {
 .menu-items li {
 	display: inline;
 	padding: 5px 10px;
-	border: 2px solid #FFFFFF;
+/* 	border: 2px solid #FFFFFF; */
 	border-radius: 3px;
 	margin-right: 10px;
-}
-
-.menu-items li:hover,
-button:hover {
-	background: #FFFFFF;
-	color: #333;
 }
 
 .landing {
@@ -249,7 +269,7 @@ button:hover {
 	margin-left: 25px;
 }
 
-#mobile-hr {
+.mobile-hr {
 	display: none;
 }
 
@@ -272,7 +292,7 @@ section.image-gap h1 {
   text-transform: uppercase;
   letter-spacing: 3px;
   /* padding-bottom: 0px; */
-  padding-top: 31%;
+/*   padding-top: 31%; */
 }
 
 /*
@@ -295,8 +315,10 @@ section.image-gap.image-2 {
 }
 
 .container {
-	max-width: 500px;
-	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	margin-top: -90px;
+	width: 100%;
 }
 
 footer {
@@ -333,11 +355,11 @@ footer {
 	}
 	
 	.testimonials-left {
-	margin-right: 0px;
+		margin-right: 0px;
 	}
 
 	.testimonials-right {
-	margin-left: 0px;
+		margin-left: 0px;
 	}
 	
 	.three-column,
@@ -347,32 +369,44 @@ footer {
 		width: 85%;
 	}
 	
-	#none-mobile-hr {
+	.none-mobile-hr {
 		display: none;
 	}
 	
-	#mobile-hr {
+	.mobile-hr {
 		display: inline;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.menu-items {
+		display: none;
+	}
+	
+	.logo {
+		height: 72px;
+}
+	
+	.mobile {
+		display: inline;
+		position: fixed;
+		z-index: -1;
+		width: 100%;
+		background-color: rgba(0,0,0,1);
+		height: 72px;
+	}
+	
+	.mobile img {
+		width: 45px;
+		position: fixed;
+		right: 17px;
+		top: 13px;
+
 	}
 }
 
 
 @media screen and (max-width: 320px) {
-	
-	.menu-items {
-		display: none;
-	}
-	
-	.mobile {
-		position: absolute;
-		right: 20px;
-		top: 19px;
-		height: 33px;
-		width: 34px;
-		border: 2px solid #FFFFFF;
-		border-radius: 3px;
-		z-index: 1000;
-	}
 	
 	.landing-welcome {
 		color: #FFFFFF;
@@ -394,7 +428,5 @@ footer {
 }
 
 @media screen and (min-width: 321px) {
-	.mobile {
-		display: none;
-	}
+	
 }

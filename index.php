@@ -4,10 +4,11 @@
 	<head><meta charset="UTF-8" />
 		<title>740.is - Vefsíður</title>
 		<link rel="stylesheet" type="text/css" href="normalize.css">
-<!-- 		<link rel="stylesheet" href="http://basehold.it/30/ff00ff"> -->
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300,500,300italic,500italic' rel='stylesheet' type='text/css'>
+		
+<!-- 		<link rel="stylesheet" href="http://basehold.it/30/ff00ff"> -->
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
@@ -15,19 +16,21 @@
 	<body>
 		<nav>
 			<div class="logo">
-				<img src="images/740is-logo-163px.png" alt="Logo 740.is">
+				<img src="images/740is-logo-163px.png" alt="Merki 740.is">
 			</div>
 			
 			<div class="menu-items">
 				<ul>
-						<a href="#heim"><li>Heim</li></a>
-						<a href="#verkefni"><li>Verkefni</li></a>
-						<a href="#umokkur"><li>Um 740</li></a>
-						<a href="#"><li id="display-contact-form">Hafa samband</li></a>
+						<li><a href="#heim" class="button-white">Heim</a></li>
+						<li><a href="#verkefni" class="button-white">Verkefni</a></li>
+						<li><a href="#umokkur" class="button-white">Um 740</a></li>
+						<li id="display-contact-form"><a href="#" class="button-white">Hafa samband</a></li>
 				</ul>
 			</div>
 			
-			<div class="mobile"><img src="images/mobile-button.png"></div>
+			<div class="mobile">
+				<img src="images/icons/menu.svg" class="" alt="Snjalltækja hnappur">
+			</div>
 				
 		</nav>
 	
@@ -52,28 +55,28 @@
 			<div class="content three-column" id="">  <!-- ID MISSING -->
 				
 				<div class="intro-content-row-one">
-					<center><img src="images/740-intro-img-new.png" alt=""></center>
+					<center><img src="images/740-intro-img-new.png" alt="Hringlaga útlínumynd af vefsíðu"></center>
 					<h4>Vefsíðugerð</h4>
-					<span id="none-mobile-hr"><hr></span>
+					<span class="none-mobile-hr"><hr></span>
 					<p>Við leggjum metnað okkar í að hanna flottar, stílhreinar vefsíður sem aðlaga sig að snjallsímum og öðrum snjalltækjum. Passað er upp á að síðurnar séu léttar til að auðveldara sé að skoða þær í símum. Vertu með aðlaðandi útlit á vefsíðunni þinni því það skiptir máli!</p>
 <!-- 					<center><button>Smelltu hér</button></center> -->
-					<span id="mobile-hr"><hr></span>
+					<span class="mobile-hr"><hr></span>
 				</div>
 				
 				
 				<div class="intro-content-row-two">
-					<center><img src="images/740-intro-img-online.png" alt=""></center>
+					<center><img src="images/740-intro-img-online.png" alt="Hringlaga mynd af innkaupakerru"></center>
 					<h4>Netverslun</h4>
-					<span id="none-mobile-hr"><hr></span>
+					<span class="none-mobile-hr"><hr></span>
 					<p>Notendavæn og traust netverslun sem við sérsníðum að þínu útliti. Sérlega einföld í notkun og hægt að hafa ýmsa greiðsluvalmöguleika. Vertu með vörurnar þínar til sölu allan sólarhringinn!</p>
 <!-- 					<center><button>Smelltu hér</button></center> -->
-					<span id="mobile-hr"><hr></span>
+					<span class="mobile-hr"><hr></span>
 				</div>
 				
 				<div class="intro-content-row-three">
-					<center><img src="images/740-intro-img-nytt-utlit.png" alt=""></center>
+					<center><img src="images/740-intro-img-nytt-utlit.png" alt="Orðin NÝTT ÚTLIT inn í hring"></center>
 					<h4>Útlitsbreyting</h4>
-					<span id="none-mobile-hr"><hr></span>
+					<span class="none-mobile-hr"><hr></span>
 					<p>Er langtsíðan að vefsíðan hjá þér var uppfærð síðast eða er netsíðan hjá þér lítt spennandi, ónotendavæn og beinlínis fráhrindandi. Það er kominn tími til að gefa núverandi netsíðu nútímalegt og stílhreint útlit - Hafðu samband!</p>
 <!-- 					<center><button>Smelltu hér</button></center> -->
 <!-- 					<span id="mobile-hr"><hr></span> -->
@@ -89,7 +92,7 @@
 		<section class="image-gap image-2" id="verkefni">
 			<div class="container">
 				<h1>FYRRI VERKEFNI</h1>
-				<center><button>Sjá Öll</button></center>
+				<center><a href="#" class="button-white">Skoða Öll</a></center>
   			</div>
 		</section>
 		
@@ -98,13 +101,13 @@
 			<div class="testimonials-left">
 				<center><img src="images/ll-netverslun.png" alt="Mynd af tilbúinni vefsíðu" width="250px"></center>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis a nibh id gravida. Vestibulum sed sodales enim, eget pretium tortor. Fusce accumsan accumsan dignissim. Vivamus sollicitudin tristique felis, sit amet iaculis dui vulputate a. Curabitur placerat neque sed mi venenatis tincidunt. Vestibulum eget tempor nulla, ut vehicula velit. Quisque lobortis tortor interdum lectus suscipit, id pharetra augue facilisis.</p>
-				<center><button>Skoða Nánar</button></center>
+				<center><a href="#" class="button-gray">Skoða Nánar</a></center>
 			</div>
 			
 			<div class="testimonials-right">
 				<center><img src="images/thinnlikami-netsida.jpg" alt="Mynd af tilbúinni vefsíðu" width="250px"></center>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis a nibh id gravida. Vestibulum sed sodales enim, eget pretium tortor. Fusce accumsan accumsan dignissim. Vivamus sollicitudin tristique felis, sit amet iaculis dui vulputate a. Curabitur placerat neque sed mi venenatis tincidunt. Vestibulum eget tempor nulla, ut vehicula velit. Quisque lobortis tortor interdum lectus suscipit, id pharetra augue facilisis.</p>
-				<center><button>Skoða Nánar</button></center>
+				<center><a href="#" class="button-gray">Skoða Nánar</a></center>
 			</div>
 			
 		</section>
@@ -122,7 +125,7 @@
 		</section>
 		
 		<footer>
-			<h4>&copy;2014-<?php echo date("Y"); ?> | 740.is - Allur réttur áskilinn.</h4>
+			<h4>&copy;2014-<?php echo date("Y"); ?> | 740.is | Allur&nbsp;réttur áskilinn.</h4>
 		</footer>
 		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
