@@ -1,0 +1,446 @@
+/*
+Theme Name: Webpage for 740.is
+Theme URI: http://740.is/
+Description: A custom WordPress website for 740.is
+Author: Steingrimur
+Author URI: http://740.is
+Version: 1.0
+Tags: clean, light, responsive
+
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 1.125em;
+	font-weight: 300;
+}
+
+p {
+	font-size: 1.125em;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h4 {
+	font-family: 'Josefin Slab', serif;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2.5em;
+}
+
+h4 {
+	font-size: 1.75em;
+}
+
+nav {
+	width: 100%;
+	position: absolute;
+	top:0;
+	z-index: 1;
+}
+
+.mailto {
+	text-decoration: none;
+	color: #fff;
+}
+
+.button-white,
+.button-gray {
+	background-color: transparent;
+	border-radius: 3px;
+	padding: 7px 10px 5px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 1.1px;
+
+}
+
+.button-white {
+	color: #fff;
+	border: 2px solid #FFFFFF;
+}
+
+.button-white:hover {
+	background: #fff;
+	color: #333;
+}
+
+.button-gray {
+	color: #333;
+	border: 2px solid #333333;
+	
+}
+
+.button-gray:hover {
+	background: #333;
+	color: #fff;
+}
+
+section {
+	background: #eee;
+}
+
+.logo {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	max-width: 100%;
+}
+
+.logo img {
+	float: left;
+	height: 100%;
+}
+
+.mobile {
+	display: none;
+}
+
+.menu-items {
+	position: fixed;
+	width: 100%;
+	text-align: right;
+	background-color: rgba(255,255,255,0.3);
+	height: 65px;
+	z-index: -1;
+}
+
+.menu-items,
+.menu-items a {
+	color: #fff;
+	padding-top: 7px;
+}
+
+.menu-items a {
+	text-decoration: none;
+}
+
+.menu-items>ul {
+	margin-right: 15px;
+}
+
+.menu-items li {
+	display: inline;
+	padding: 5px 10px;
+/* 	border: 2px solid #FFFFFF; */
+	border-radius: 3px;
+	margin-right: 10px;
+}
+
+.landing {
+	position: relative;
+	background-image: url("images/irish-hands.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;	
+}
+
+.landing-welcome {
+  position: absolute;
+  left: -244px;
+  top: 44%;
+  margin-left: 50%;
+  padding: 5px 40px;
+}
+
+.landing-welcome h1,
+.landing-contact h1 {
+	margin-bottom: 5px;
+}
+
+.landing-welcome h4,
+.landing-contact h4 {
+	margin-top: 5px;
+	letter-spacing: 0.45px;
+}
+
+.landing-welcome h1,
+.landing-welcome h4,
+.landing-contact h1,
+.landing-contact h4 {
+	text-align: center;
+}
+
+.landing-welcome,
+.landing-contact {
+	background: rgba(0,0,0,0.4);
+	color: #FFFFFF;
+	border-radius: 5px;
+}
+
+.landing-contact {
+	display: none;
+	position: absolute;
+	left: -219px;
+	top: 44%;
+	margin-left: 50%;
+	padding: 5px 40px;
+}
+
+.content,
+.testimonials {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.content-text {
+	width: 75vw;
+	margin: auto;
+}
+
+.content-text,
+.testimonials-left,
+.testimonials-right {
+	background: rgba(180,180,180,0.1);
+	padding: 25px;
+	border-radius: 5px;
+	border: 1px solid #333;
+}
+
+.three-column {
+	width: 1000px;
+	margin: auto;
+}
+
+.testimonials {
+	text-align: center;
+}
+
+.testimonials-left,
+.testimonials-right {
+	position: relative;
+	width: 360px;
+	display: inline-table;
+	text-align: left;
+	margin: auto;
+}
+
+.testimonials-left {
+	margin-right: 30px;
+}
+
+.testimonials-right {
+	margin-left: 30px;
+}
+
+.testimonials img {
+	  box-shadow: 7px 7px 10px #9e9e9e;
+}
+
+.intro {
+	background: #36B473;
+	color: #FFFFFF;
+	padding-bottom: 10px;
+}
+
+.intro-content img {
+	position: relative;
+	height: 80px;
+	width: 80px;
+	top: 20px;
+}
+
+.intro-content-row-one,
+.intro-content-row-two,
+.intro-content-row-three {
+	position: relative;
+	width: 310px;
+	height: 100%;
+	display: inline-table;
+	text-align: left;
+}
+
+.intro-content-row-one h4,
+.intro-content-row-two h4,
+.intro-content-row-three h4 {
+	text-align: center;
+}
+
+.intro-content-row-one {
+	margin-right: 25px;
+}
+
+.intro-content-row-two {
+	margin: auto;	
+}
+
+.intro-content-row-three {
+	margin-left: 25px;
+}
+
+.mobile-hr {
+	display: none;
+}
+
+section.image-gap {
+	height: 400px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+	padding-top: 1px;
+	
+}
+
+section.image-gap h1 {
+  color: #fff;
+  font-weight: 700;
+  /* line-height: 250px; */
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  /* padding-bottom: 0px; */
+/*   padding-top: 31%; */
+}
+
+/*
+section.image-gap h1 {
+	color: #fff;
+	font-weight: 700;
+	line-height: 250px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+*/
+
+section.image-gap.image-1 {
+	background-image: url("images/apple-gear-looking-pretty.jpg");
+}
+
+section.image-gap.image-2 {
+	background-image: url("images/ipad-keyboard-1920px.jpg");
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	margin-top: -90px;
+	width: 100%;
+}
+
+footer {
+	position: relative;
+	float: left;
+	padding-bottom: 0;
+	background: #222;
+	color: #9f9f9f;
+	width: 100%;
+	text-align: center;
+}
+
+@media screen and (max-width: 1040px) {
+	.content {
+		width: 100%;
+		margin: auto;
+	}
+	
+	.intro-content-row-one,
+	.intro-content-row-two,
+	.intro-content-row-three {
+		display: inline;
+	}
+	
+	.intro-content-row-two img,
+	.intro-content-row-three img {
+		padding-top: 10px;
+	}
+	
+	.testimonials-left,
+	.testimonials-right {
+		position: relative;
+		margin-bottom: 35px;
+	}
+	
+	.testimonials-left {
+		margin-right: 0px;
+	}
+
+	.testimonials-right {
+		margin-left: 0px;
+	}
+	
+	.three-column,
+	.testimonials-left,
+	.testimonials-right,
+	.content-text {
+		width: 85%;
+	}
+	
+	.none-mobile-hr {
+		display: none;
+	}
+	
+	.mobile-hr {
+		display: inline;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.menu-items {
+		display: none;
+	}
+	
+	.logo {
+		height: 72px;
+}
+	
+	.mobile {
+		display: inline;
+		position: fixed;
+		z-index: -1;
+		width: 100%;
+		background-color: rgba(0,0,0,1);
+		height: 72px;
+	}
+	
+	.mobile img {
+		width: 45px;
+		position: fixed;
+		right: 17px;
+		top: 13px;
+
+	}
+}
+
+
+@media screen and (max-width: 320px) {
+	
+	.landing-welcome {
+		color: #FFFFFF;
+		padding: 5px 10px;
+		border-radius: 5px;
+	}
+
+	h1 {
+		font-size: 2em;
+	}
+	
+	h2 {
+		font-size: 1.75em;
+	}
+	
+	h4 {
+		font-size: 1.25em;
+	}
+}
+
+@media screen and (min-width: 321px) {
+	
+}
