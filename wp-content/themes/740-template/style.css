@@ -198,6 +198,14 @@ section {
 	padding-bottom: 40px;
 }
 
+.testimonials h1 {
+	font-size: 2.5em;
+}
+
+.testimonials a {
+	text-decoration: none;
+}
+
 .content-text {
 	width: 75vw;
 	margin: auto;

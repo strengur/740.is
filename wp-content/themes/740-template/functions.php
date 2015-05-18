@@ -1,9 +1,5 @@
 <?php
-/**
-* Register our sidebars and widgetized areas.
-*
-*/
-
+/***** Register our sidebars and widgetized areas *****/
 function arphabet_widgets_init() {
 
 	register_sidebar( array(
@@ -17,23 +13,28 @@ function arphabet_widgets_init() {
 
 }
 add_action( 'widgets_init', 'arphabet_widgets_init' );
-?>
 
+/***** STYLES AND FONTS DECLARED *****/
+function theme_styles() {
+	wp_enqueue_style('googleFonts-Josefin-Slab','http://fonts.googleapis.com/css?family=Josefin+Slab:400,700');
 
-<?php
-	/*
-	*	Stylesheets and fonts
-	*/
+	wp_enqueue_style('googleFonts-Alegreya-Sans','http://fonts.googleapis.com/css?family=Alegreya+Sans:300,500,300italic,500italic');
 
-	function theme_styles() {
-		wp_enqueue_style('googleFonts-Josefin-Slab','http://fonts.googleapis.com/css?family=Josefin+Slab:400,700');
+	wp_enqueue_style('normalize-theme-style', get_template_directory_uri(). '/css/normalize.css');
+	wp_enqueue_style('main-theme-style', get_template_directory_uri() . '/style.css');
+}
 
-		wp_enqueue_style('googleFonts-Alegreya-Sans','http://fonts.googleapis.com/css?family=Alegreya+Sans:300,500,300italic,500italic');
+add_action( 'wp_enqueue_scripts', 'theme_styles' );
 
-		wp_enqueue_style('normalize-theme-style', get_template_directory_uri(). '/css/normalize.css');
-		wp_enqueue_style('main-theme-style', get_template_directory_uri() . '/style.css');
+//------ EXCERPT ADJUSTMENT ------//
+function new_excerpt_more( $more ) {
+	//return ' <a class="new-excerpt" href="' . get_permalink( get_the_ID() ) . '">' . __( '<br>[... Lesa Meira]' ) . '</a>';
 	}
-
-	add_action( 'wp_enqueue_scripts', 'theme_styles' );
+	add_filter( 'excerpt_more', 'new_excerpt_more' );
+	
+	function custom_excerpt_length( $length ) {
+	return 45;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 	
 ?>

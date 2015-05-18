@@ -61,14 +61,85 @@
 		<section class="testimonials">
 			<h2>SÍÐUSTU VERKEFNI</h2>
 			<div class="testimonials-left">
-				<center><img src="<?php bloginfo('template_directory');?>/images/ll-netverslun.png" alt="Mynd af tilbúinni vefsíðu" width="250px"></center>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis a nibh id gravida. Vestibulum sed sodales enim, eget pretium tortor. Fusce accumsan accumsan dignissim. Vivamus sollicitudin tristique felis, sit amet iaculis dui vulputate a. Curabitur placerat neque sed mi venenatis tincidunt. Vestibulum eget tempor nulla, ut vehicula velit. Quisque lobortis tortor interdum lectus suscipit, id pharetra augue facilisis.</p>
+				<?php
+
+					$args = array('category_name' => 'verkefni', 'posts_per_page' => 1, 'offset' => 0);
+					$query = new WP_Query( $args );
+
+					$firstPhoto = array( 'post_type' => 'attachment', 'posts_per_page' => 1, 'offset' => 0, 'post_status' =>'any' ); 
+					$firstAttachments = get_posts( $firstPhoto );
+					
+					if ( $firstAttachments ) {
+						foreach ( $firstAttachments as $firstAttachment ) {
+							echo '<center>';
+							the_attachment_link( $firstAttachment->ID , true);
+							echo '</center>';
+							}
+					} else {
+						echo "Því miður vantar mynd með þessari færslu";
+					}
+					
+					if ( $query->have_posts() ) {
+						while ( $query->have_posts() ) {
+							$query->the_post();
+
+							echo '<a href="';
+							the_permalink();
+							echo '"><h1>';
+							the_title();
+							echo '</a></h1>';
+							the_excerpt();
+						}
+
+						wp_reset_postdata();
+
+					} else {
+
+						echo "Því miður finnst engin grein til að birta";
+					}
+				?>
+
 				<center><a href="#" class="button-gray">Skoða Nánar</a></center>
 			</div>
 			
 			<div class="testimonials-right">
-				<center><img src="<?php bloginfo('template_directory');?>/images/thinnlikami-netsida.jpg" alt="Mynd af tilbúinni vefsíðu" width="250px"></center>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis a nibh id gravida. Vestibulum sed sodales enim, eget pretium tortor. Fusce accumsan accumsan dignissim. Vivamus sollicitudin tristique felis, sit amet iaculis dui vulputate a. Curabitur placerat neque sed mi venenatis tincidunt. Vestibulum eget tempor nulla, ut vehicula velit. Quisque lobortis tortor interdum lectus suscipit, id pharetra augue facilisis.</p>
+				<?php
+					
+					$args = array('category_name' => 'verkefni', 'posts_per_page' => 1, 'offset' => 1);
+					$query = new WP_Query( $args );
+					
+					$secondPhoto = array( 'post_type' => 'attachment', 'posts_per_page' => 1, 'offset' => 1, 'post_status' =>'any' ); 
+					$secondAttachments = get_posts( $secondPhoto );
+
+					if ( $secondAttachments ) {
+						foreach ( $secondAttachments as $secondAttachment ) {
+							
+							echo '<center>';
+							the_attachment_link( $secondAttachment->ID , true);
+							echo '</center>';
+							}
+					} else {
+						echo "<center>Því miður vantar mynd með þessari færslu</center>";
+					}
+
+					if ( $query->have_posts() ) {
+						while ( $query->have_posts() ) {
+							$query->the_post();
+
+							echo '<a href="';
+							the_permalink();
+							echo '"><h1>';
+							the_title();
+							echo '</a></h1>';
+							the_excerpt();
+						}
+
+						wp_reset_postdata();
+
+					} else {
+						echo "Því miður finnst engin grein til að birta";
+					}
+				?>
 				<center><a href="#" class="button-gray">Skoða Nánar</a></center>
 			</div>
 			
