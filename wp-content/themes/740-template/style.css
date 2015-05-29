@@ -96,15 +96,15 @@ section {
 }
 
 .logo {
-	position: absolute;
+	position: fixed;
 	top: 10px;
 	left: 10px;
-	max-width: 100%;
+/* 	max-width: 100%; */
 }
 
 .logo img {
 	float: left;
-	height: 100%;
+/* 	width: 100%; */
 }
 
 .mobile {
@@ -137,7 +137,6 @@ section {
 .menu-items li {
 	display: inline;
 	padding: 5px 10px;
-/* 	border: 2px solid #FFFFFF; */
 	border-radius: 3px;
 	margin-right: 10px;
 }
@@ -251,7 +250,7 @@ section {
 }
 
 .intro {
-	background: #36B473;
+	background: #00a651;
 	color: #FFFFFF;
 	padding-bottom: 10px;
 }

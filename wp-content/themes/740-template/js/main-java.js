@@ -1,12 +1,25 @@
 // Function to fade top menu to dark smoothlie at sudden point
-window.onscroll = menuToDark;
+window.onscroll = basedOnWindowScrolling;
 
-function menuToDark () {
- if (window.pageYOffset > 173) {
-	 $(".menu-items").css("background-color", "#222").css("transition-duration", "1s");
-	 } else {
-		 $(".menu-items").css("background-color", "rgba(255,255,255,0.3)");
-	 }
+function basedOnWindowScrolling () {
+	// Turn menu to dark grey
+	if (window.pageYOffset > 58) {
+		$(".menu-items").css("background-color", "#222").css("transition-duration", "1s");
+	} else {
+		$(".menu-items").css("background-color", "rgba(255,255,255,0.3)");
+	}
+	
+	// Shrink the logo	
+	if (window.pageYOffset > 58) {
+		$(".logo img").css("width" , "105");
+		console.log();
+	} else {
+		var i = 163;
+		i -= window.pageYOffset;
+		if (i >= 104) {
+			$(".logo img").css("width" , i);
+		}
+	}
 }
 
 

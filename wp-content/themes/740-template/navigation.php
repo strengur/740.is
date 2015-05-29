@@ -1,6 +1,6 @@
 <nav>
 	<div class="logo">
-		<img src="<?php bloginfo('template_directory');?>/images/740is-logo-163px.png" alt="Merki 740.is">
+		<img src="<?php bloginfo('template_directory');?>/images/740is-logo1.svg" alt="Merki 740.is">
 	</div>
 
 	<div class="menu-items">
