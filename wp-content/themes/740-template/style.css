@@ -99,12 +99,10 @@ section {
 	position: fixed;
 	top: 10px;
 	left: 10px;
-/* 	max-width: 100%; */
 }
 
 .logo img {
 	float: left;
-/* 	width: 100%; */
 }
 
 .mobile {
@@ -203,6 +201,7 @@ section {
 
 .testimonials a {
 	text-decoration: none;
+	color: #00a651;
 }
 
 .content-text {
@@ -216,7 +215,7 @@ section {
 	background: rgba(180,180,180,0.1);
 	padding: 25px;
 	border-radius: 5px;
-	border: 1px solid #333;
+	border: 1px solid #00a651;
 }
 
 .three-column {
@@ -308,24 +307,10 @@ section.image-gap {
 section.image-gap h1 {
   color: #fff;
   font-weight: 700;
-  /* line-height: 250px; */
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px;
-  /* padding-bottom: 0px; */
-/*   padding-top: 31%; */
 }
-
-/*
-section.image-gap h1 {
-	color: #fff;
-	font-weight: 700;
-	line-height: 250px;
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-}
-*/
 
 section.image-gap.image-1 {
 	background-image: url("images/apple-gear-looking-pretty.jpg");

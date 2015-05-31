@@ -85,11 +85,15 @@
 
 							echo '<a href="';
 							the_permalink();
-							echo '"><h1>';
+							echo '"><center><h1>';
 							the_title();
-							echo '</a></h1>';
+							echo '</a></h1></center>';
 							the_excerpt();
 						}
+						
+						echo '<center><a href="';
+						the_permalink();
+						echo '" class="button-gray">Skoða Nánar</a></center>';
 
 						wp_reset_postdata();
 
@@ -99,7 +103,6 @@
 					}
 				?>
 
-				<center><a href="#" class="button-gray">Skoða Nánar</a></center>
 			</div>
 			
 			<div class="testimonials-right">
@@ -128,19 +131,22 @@
 
 							echo '<a href="';
 							the_permalink();
-							echo '"><h1>';
+							echo '"><center><h1>';
 							the_title();
-							echo '</a></h1>';
+							echo '</a></h1></center>';
 							the_excerpt();
 						}
-
+						
+						echo '<center><a href="';
+						the_permalink();
+						echo '" class="button-gray">Skoða Nánar</a></center>';
+						
 						wp_reset_postdata();
 
 					} else {
 						echo "Því miður finnst engin grein til að birta";
 					}
 				?>
-				<center><a href="#" class="button-gray">Skoða Nánar</a></center>
 			</div>
 			
 		</section>
