@@ -2,15 +2,17 @@
 window.onscroll = basedOnWindowScrolling;
 
 function basedOnWindowScrolling () {
+	var position = window.pageYOffset;
+	
 	// Turn menu to dark grey
-	if (window.pageYOffset > 58) {
+	if (position > 58) {
 		$(".menu-items").css("background-color", "#222").css("transition-duration", "1s");
 	} else {
 		$(".menu-items").css("background-color", "rgba(255,255,255,0.3)");
 	}
 	
 	// Shrink the logo	
-	if (window.pageYOffset > 58) {
+	if (position > 60) {
 		$(".logo img").css("width" , "105");
 		console.log();
 	} else {
@@ -29,9 +31,6 @@ $("#display-contact-form").click(function() {
 	$(".landing-welcome").fadeOut(1500);
 	$(".landing-contact").fadeIn(1500);
 });
-
-
-
 
 // Function to move up/down the page more smoothlie
 /*
