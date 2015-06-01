@@ -54,7 +54,7 @@
 		<section class="image-gap image-2" id="verkefni">
 			<div class="container">
 				<h1>FYRRI VERKEFNI</h1>
-				<center><a href="#" class="button-white">Skoða Öll</a></center>
+				<div class="button-white"><a href="#">Skoða Öll</a></div>
   			</div>
 		</section>
 		
@@ -71,12 +71,12 @@
 					
 					if ( $firstAttachments ) {
 						foreach ( $firstAttachments as $firstAttachment ) {
-							echo '<center>';
+							echo '<div class="testimonials-image">';
 							the_attachment_link( $firstAttachment->ID , true);
-							echo '</center>';
+							echo '</div>';
 							}
 					} else {
-						echo "Því miður vantar mynd með þessari færslu";
+						echo "Því miður vantar mynd með þessari færslu.";
 					}
 					
 					if ( $query->have_posts() ) {
@@ -91,15 +91,15 @@
 							the_excerpt();
 						}
 						
-						echo '<center><a href="';
+						echo '<div class="button-gray"><a href="';
 						the_permalink();
-						echo '" class="button-gray">Skoða Nánar</a></center>';
+						echo '">Skoða Nánar</a></div>';
 
 						wp_reset_postdata();
 
 					} else {
 
-						echo "Því miður finnst engin grein til að birta";
+						echo "Því miður finnst engin grein til að birta.";
 					}
 				?>
 
@@ -117,12 +117,12 @@
 					if ( $secondAttachments ) {
 						foreach ( $secondAttachments as $secondAttachment ) {
 							
-							echo '<center>';
+							echo '<div class="testimonials-image">';
 							the_attachment_link( $secondAttachment->ID , true);
-							echo '</center>';
+							echo '</div>';
 							}
 					} else {
-						echo "<center>Því miður vantar mynd með þessari færslu</center>";
+						echo "Því miður vantar mynd með þessari færslu.";
 					}
 
 					if ( $query->have_posts() ) {
@@ -137,9 +137,9 @@
 							the_excerpt();
 						}
 						
-						echo '<center><a href="';
+						echo '<div class="button-gray"><a href="';
 						the_permalink();
-						echo '" class="button-gray">Skoða Nánar</a></center>';
+						echo '">Skoða Nánar</a></div>';
 						
 						wp_reset_postdata();
 

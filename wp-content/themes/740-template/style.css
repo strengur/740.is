@@ -59,8 +59,8 @@ nav {
 	color: #fff;
 }
 
-.button-white,
-.button-gray {
+.button-white a,
+.button-gray a {
 	background-color: transparent;
 	border-radius: 3px;
 	padding: 7px 10px 5px;
@@ -70,23 +70,28 @@ nav {
 
 }
 
-.button-white {
+.button-white,
+.button-gray {
+	text-align: center;
+}
+
+.button-white a {
 	color: #fff;
 	border: 2px solid #FFFFFF;
 }
 
-.button-white:hover {
+
+.button-white a:hover {
 	background: #fff;
 	color: #333;
 }
 
-.button-gray {
+.button-gray a {
 	color: #333;
 	border: 2px solid #333333;
-	
 }
 
-.button-gray:hover {
+.button-gray a:hover {
 	background: #333;
 	color: #fff;
 }
@@ -192,11 +197,23 @@ section {
 .content,
 .testimonials {
 	padding-top: 40px;
+}
+
+.content {
 	padding-bottom: 40px;
+}
+
+.testimonials {
+	padding-bottom: 80px;
+}
+
+.testimonials p {
+	padding-bottom: 20px;
 }
 
 .testimonials h1 {
 	font-size: 2.5em;
+	margin-bottom: 0;
 }
 
 .testimonials a {
@@ -213,7 +230,7 @@ section {
 .testimonials-left,
 .testimonials-right {
 	background: rgba(180,180,180,0.1);
-	padding: 25px;
+	padding: 35px 25px;
 	border-radius: 5px;
 	border: 1px solid #00a651;
 }
@@ -223,12 +240,14 @@ section {
 	margin: auto;
 }
 
-.testimonials {
+.testimonials, 
+.testimonials h1,
+.testimonials-image {
 	text-align: center;
 }
 
-.testimonials h1 {
-	text-align: center;
+.testimonials-image {
+	padding-bottom: 20px;
 }
 
 .testimonials-left,
