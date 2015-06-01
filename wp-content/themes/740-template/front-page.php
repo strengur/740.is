@@ -14,31 +14,31 @@
 		</section>
 		
 		<section class="intro" id="kynning">
-			<div class="content three-column" id="">  <!-- ID MISSING -->
+			<div class="content three-column">
 				
 				<div class="intro-content-row-one">
-					<center><img src="<?php bloginfo('template_directory');?>/images/740-intro-img-new.png" alt="Hringlaga útlínumynd af vefsíðu"></center>
-					<h4>Vefsíðugerð</h4>
-					<span class="none-mobile-hr"><hr></span>
+					<h4><img src="<?php bloginfo('template_directory');?>/images/740-intro-img-new.png" alt="Hringlaga útlínumynd af vefsíðu"><br><br>
+					Vefsíðugerð</h4>
+					<div class="none-mobile-hr"><hr></div>
 					<p>Við leggjum metnað okkar í að hanna flottar, stílhreinar vefsíður sem aðlaga sig að snjallsímum og öðrum snjalltækjum. Passað er upp á að síðurnar séu léttar til að auðveldara sé að skoða þær í símum. Vertu með aðlaðandi útlit á vefsíðunni þinni því það skiptir máli!</p>
 <!-- 					<center><button>Smelltu hér</button></center> -->
-					<span class="mobile-hr"><hr></span>
+					<div class="mobile-hr"><hr></div>
 				</div>
 				
 				
 				<div class="intro-content-row-two">
-					<center><img src="<?php bloginfo('template_directory');?>/images/740-intro-img-online.png" alt="Hringlaga mynd af innkaupakerru"></center>
-					<h4>Netverslun</h4>
-					<span class="none-mobile-hr"><hr></span>
+					<h4><img src="<?php bloginfo('template_directory');?>/images/740-intro-img-online.png" alt="Hringlaga mynd af innkaupakerru"><br><br>
+					Netverslun</h4>
+					<div class="none-mobile-hr"><hr></div>
 					<p>Notendavæn og traust netverslun sem við sérsníðum að þínu útliti. Sérlega einföld í notkun og hægt að hafa ýmsa greiðsluvalmöguleika. Vertu með vörurnar þínar til sölu allan sólarhringinn!</p>
 <!-- 					<center><button>Smelltu hér</button></center> -->
-					<span class="mobile-hr"><hr></span>
+					<div class="mobile-hr"><hr></div>
 				</div>
 				
 				<div class="intro-content-row-three">
-					<center><img src="<?php bloginfo('template_directory');?>/images/740-intro-img-nytt-utlit.png" alt="Orðin NÝTT ÚTLIT inn í hring"></center>
-					<h4>Útlitsbreyting</h4>
-					<span class="none-mobile-hr"><hr></span>
+					<h4><img src="<?php bloginfo('template_directory');?>/images/740-intro-img-nytt-utlit.png" alt="Orðin NÝTT ÚTLIT inn í hring"><br><br>
+					Útlitsbreyting</h4>
+					<div class="none-mobile-hr"><hr></div>
 					<p>Er langt síðan að vefsíðan hjá þér var uppfærð síðast eða er netsíðan hjá þér lítt spennandi, ónotendavæn og beinlínis fráhrindandi. Það er kominn tími til að gefa núverandi netsíðu nútímalegt og stílhreint útlit - Hafðu samband!</p>
 <!-- 					<center><button>Smelltu hér</button></center> -->
 <!-- 					<span id="mobile-hr"><hr></span> -->
@@ -85,9 +85,9 @@
 
 							echo '<a href="';
 							the_permalink();
-							echo '"><center><h1>';
+							echo '"><h1>';
 							the_title();
-							echo '</a></h1></center>';
+							echo '</h1></a>';
 							the_excerpt();
 						}
 						
@@ -131,9 +131,9 @@
 
 							echo '<a href="';
 							the_permalink();
-							echo '"><center><h1>';
+							echo '"><h1>';
 							the_title();
-							echo '</a></h1></center>';
+							echo '</h1></a>';
 							the_excerpt();
 						}
 						

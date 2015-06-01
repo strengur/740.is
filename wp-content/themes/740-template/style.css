@@ -227,6 +227,10 @@ section {
 	text-align: center;
 }
 
+.testimonials h1 {
+	text-align: center;
+}
+
 .testimonials-left,
 .testimonials-right {
 	position: relative;
