@@ -7,7 +7,7 @@
 		<ul>
 			<li><a href="http://740.is">Heim</a></li>
 			<li><a href="#verkefni">Verkefni</a></li>
-			<li><a href="#umokkur">Um 740</a></li>
+			<li><a href="http://740.is/#umokkur">Um 740</a></li>
 			<li id="display-contact-form"><a href="#">Hafa samband</a></li>
 			</ul>
 	</div>

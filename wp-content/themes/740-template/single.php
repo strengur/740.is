@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section class="single-post">
-	<div class="single-post-content">
+	<div class="single-post-background single-post-content single-post-content-images">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		
 		<h2><?php the_title_attribute(); ?></h2>
