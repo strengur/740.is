@@ -26,15 +26,25 @@ function theme_styles() {
 
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
 
-//------ EXCERPT ADJUSTMENT ------//
-function new_excerpt_more( $more ) {
-	//return ' <a class="new-excerpt" href="' . get_permalink( get_the_ID() ) . '">' . __( '<br>[... Lesa Meira]' ) . '</a>';
+/***** EXCERPT FOR LEFT AND RIGT COLUMNS ON FRONTPAGE *****/
+function the_excerpt_max_charlength($charlength) {
+	$excerpt = get_the_excerpt();
+	$charlength++;
+
+	if ( mb_strlen( $excerpt ) > $charlength ) {
+		$subex = mb_substr( $excerpt, 0, $charlength - 5 );
+		$exwords = explode( ' ', $subex );
+		$excut = - ( mb_strlen( $exwords[ count( $exwords ) - 1 ] ) );
+		if ( $excut < 0 ) {
+			echo mb_substr( $subex, 0, $excut );
+		} else {
+			echo $subex;
+		}
+		echo '[...]';
+	} else {
+		echo $excerpt;
 	}
-	add_filter( 'excerpt_more', 'new_excerpt_more' );
-	
-	function custom_excerpt_length( $length ) {
-	return 45;
 }
-add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
 	
 ?>

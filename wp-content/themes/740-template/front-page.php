@@ -84,11 +84,13 @@
 							$query->the_post();
 
 							echo '<a href="';
-							the_permalink();
+								the_permalink();
 							echo '"><h1>';
-							the_title();
+								the_title();
 							echo '</h1></a>';
-							the_excerpt();
+							echo '<p>';
+								the_excerpt_max_charlength(310);
+							echo '</p>';
 						}
 						
 						echo '<div class="button-gray"><a href="';
@@ -130,11 +132,13 @@
 							$query->the_post();
 
 							echo '<a href="';
-							the_permalink();
+								the_permalink();
 							echo '"><h1>';
-							the_title();
+								the_title();
 							echo '</h1></a>';
-							the_excerpt();
+							echo '<p>';
+								the_excerpt_max_charlength(310);
+							echo '</p>';
 						}
 						
 						echo '<div class="button-gray"><a href="';
