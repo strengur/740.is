@@ -72,7 +72,7 @@ nav {
 }
 
 .button-white,
-.button-gray
+.button-gray,
 .button-green {
 	text-align: center;
 }
@@ -233,13 +233,15 @@ section {
 }
 
 .content-text,
-.single-post-background {
+.single-post-background,
+.list-of-posts-background {
 	width: 75vw;
 	margin: auto;
 }
 
 .content-text,
 .single-post-background,
+.list-of-posts-background,
 .testimonials-left,
 .testimonials-right {
 	background: rgba(180,180,180,0.1);
@@ -290,7 +292,13 @@ section {
 }
 
 .intro {
-	background: #00a651;
+	background-color: #00a651;
+	
+	background: -moz-linear-gradient(135deg,#00a651, #00a651 80%, #49F29C);
+background: -webkit-linear-gradient(135deg,#00a651, #00a651 80%, #49F29C);
+background: -ms-linear-gradient(135deg,#00a651, #00a651 80%, #49F29C);
+background: -o-linear-gradient(135deg,#00a651, #00a651 80%, #49F29C);
+background: linear-gradient(135deg,#00a651, #00a651 80%, #49F29C);
 	color: #FFFFFF;
 	padding-bottom: 10px;
 }
@@ -368,14 +376,16 @@ section.image-gap.image-2 {
 	width: 100%;
 }
 
-.single-post {
+.single-post,
+.list-of-posts {
 	position: relative;
 	top: 0;
 	padding-top: 150px;
 	padding-bottom: 80px;
 }
 
-.single-post-content {
+.single-post-content,
+.list-of-posts-content {
 	position: relative;
 	margin: 0 auto;
 	max-width: 38rem;
@@ -385,6 +395,23 @@ section.image-gap.image-2 {
 	padding-left: 45px;
 }
 
+.single-post-content {
+	max-width: 38rem;
+}
+
+.list-of-posts-content {
+	max-width: 42rem;
+	margin-bottom: 30px;
+}
+
+.list-of-posts-content>.button-gray {
+	margin-bottom: 20px;
+	margin-top: 40px;
+}
+
+.list-of-posts-content a {
+	text-decoration: none;
+}
 
 .single-post-content h2 {
 	text-align: center;

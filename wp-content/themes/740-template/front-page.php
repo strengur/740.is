@@ -54,7 +54,7 @@
 		<section class="image-gap image-2" id="verkefni">
 			<div class="container">
 				<h1>FYRRI VERKEFNI</h1>
-				<div class="button-white"><a href="#">Skoða Öll</a></div>
+				<div class="button-white"><a href="<?php bloginfo('url'); ?>/verkefni">Skoða Öll</a></div>
   			</div>
 		</section>
 		
