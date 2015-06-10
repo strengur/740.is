@@ -288,17 +288,17 @@ section {
 }
 
 .testimonials img {
-	  box-shadow: 7px 7px 10px #9e9e9e;
+	box-shadow: 7px 7px 10px #9e9e9e;
 }
 
 .intro {
 	background-color: #00a651;
 	
 	background: -moz-linear-gradient(135deg,#00a651, #00a651 80%, #49F29C);
-background: -webkit-linear-gradient(135deg,#00a651, #00a651 80%, #49F29C);
-background: -ms-linear-gradient(135deg,#00a651, #00a651 80%, #49F29C);
-background: -o-linear-gradient(135deg,#00a651, #00a651 80%, #49F29C);
-background: linear-gradient(135deg,#00a651, #00a651 80%, #49F29C);
+	background: -webkit-linear-gradient(135deg,#00a651, #00a651 80%, #49F29C);
+	background: -ms-linear-gradient(135deg,#00a651, #00a651 80%, #49F29C);
+	background: -o-linear-gradient(135deg,#00a651, #00a651 80%, #49F29C);
+	background: linear-gradient(135deg,#00a651, #00a651 80%, #49F29C);
 	color: #FFFFFF;
 	padding-bottom: 10px;
 }
@@ -411,6 +411,12 @@ section.image-gap.image-2 {
 
 .list-of-posts-content a {
 	text-decoration: none;
+}
+
+.list-of-posts-content img {
+	position: relative;
+	margin-left: 50%;
+	left: -75px;
 }
 
 .single-post-content h2 {
