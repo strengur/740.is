@@ -163,7 +163,7 @@
 		
 		<section class="content">
 			<div class="content-text">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis a nibh id gravida. Vestibulum sed sodales enim, eget pretium tortor. Fusce accumsan accumsan dignissim. Vivamus sollicitudin tristique felis, sit amet iaculis dui vulputate a. Curabitur placerat neque sed mi venenatis tincidunt. Vestibulum eget tempor nulla, ut vehicula velit. Quisque lobortis tortor interdum lectus suscipit, id pharetra augue facilisis. Aenean cursus, augue at consequat efficitur, ante ligula consectetur quam, vel eleifend tortor quam sed odio. Sed congue hendrerit justo eget condimentum. Nulla nisi nibh, porta vel cursus in, iaculis eget turpis. Phasellus a eros diam. Vestibulum nec neque tristique purus ornare feugiat sed vitae felis. Nullam quis viverra libero. In in turpis sit amet nunc egestas pretium.</p>
+				<p>Efni væntanlegt</p>
 			</div>
 		</section>
 		
